@@ -391,10 +391,6 @@ figure {
   font-weight: 400;
   text-transform: uppercase;
 }
-.sf-menu a:hover, .sf-menu a:focus, .sf-menu a.active {
-  background: #00ADB5 !important;
-  color: #fff !important;
-}
 
 .sf-menu li,
 .sf-menu ul li,
@@ -496,7 +492,6 @@ figure {
 }
 #fh5co-logo a {
   color: rgba(21, 31, 44, 0.8);
-  border: 2px solid #00ADB5;
   padding: 5 15px;
   position: relative;
   text-decoration:none;
