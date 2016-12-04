@@ -34,7 +34,14 @@ a:hover {
   text-decoration: none !important;
   color: #00ADB5 !important;
 }
-
+#fh5co-primary-menu li{
+	width:180px;
+	margin-right:2px;
+	float:left;
+	}
+#fh5co-primary-menu ul.fh5co-sub-menu{
+	width:180px;
+}
 p, ul, ol {
   margin-bottom: 1.5em;
   font-size: 18px;
@@ -384,10 +391,6 @@ figure {
   font-weight: 400;
   text-transform: uppercase;
 }
-.sf-menu a:hover, .sf-menu a:focus, .sf-menu a.active {
-  background: #00ADB5 !important;
-  color: #fff !important;
-}
 
 .sf-menu li,
 .sf-menu ul li,
@@ -480,18 +483,18 @@ figure {
 }
 
 #fh5co-logo {
-  font-size: 22px;
+  font-size: 30px;
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 600;
   float: left;
   margin-bottom: 0;
-  margin-top: 1.4em;
+  margin-top:0.9em;
 }
 #fh5co-logo a {
   color: rgba(21, 31, 44, 0.8);
-  border: 2px solid #00ADB5;
-  padding: 0 7px;
+  padding: 5 15px;
   position: relative;
+  text-decoration:none;
 }
 #fh5co-logo a i {
   color: #00ADB5;
@@ -585,7 +588,7 @@ figure {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
 }
 #fh5co-primary-menu .fh5co-sub-menu > li > .fh5co-sub-menu {
-  left: 100%;
+  left: 80%;
 }
 
 .site-header.has-image #primary-menu .sub-menu {
