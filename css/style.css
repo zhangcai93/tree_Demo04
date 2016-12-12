@@ -462,7 +462,7 @@ figure {
 
 #fh5co-header-section {
   background: white;
-  padding: 0;
+  padding:  1.4em 0;
   width: 100%;
   -webkit-box-shadow: 0px 5px 5px -4px rgba(0, 0, 0, 0.22);
   -moz-box-shadow: 0px 5px 5px -4px rgba(0, 0, 0, 0.22);
@@ -486,7 +486,7 @@ figure {
   font-size: 30px;
   text-transform: uppercase;
   font-weight: 600;
-  float: left;
+  float: right;
   margin-bottom: 0;
   margin-top:0.9em;
 }
@@ -504,24 +504,20 @@ figure {
 #fh5co-logo a:hover, #fh5co-logo a:focus {
   color: rgba(0, 0, 0, 0.9) !important;
 }
-#fh5co-logo span {
-  padding: 0;
-  margin: 0;
-  font-weight: 100;
-}
-@media screen and (max-width: 768px) {
+
+
   #fh5co-logo {
     width: 100%;
-    float: none;
+    float: right;
     margin-top: 0;
   }
-}
+
 
 #fh5co-menu-wrap {
   position: relative;
   z-index: 2;
   display: block;
-  float: right;
+  float: left;
 }
 
 #fh5co-primary-menu > li > ul li.active > a {
@@ -1658,11 +1654,11 @@ figure {
   transform: translateX(-240px);
 }
 
-@media screen and (max-width: 768px) {
+
   #fh5co-menu-wrap {
     display: none;
   }
-}
+
 
 #offcanvas-menu {
   position: absolute;
@@ -1795,7 +1791,6 @@ figure {
 }
 
 .fh5co-nav-toggle {
-  position: absolute;
   top: 0px;
   right: 0px;
   z-index: 9999;
@@ -1803,15 +1798,16 @@ figure {
   margin: 0 auto;
   display: none;
   cursor: pointer;
+  position: absolute;
 }
-@media screen and (max-width: 768px) {
+
   .fh5co-nav-toggle {
     display: block;
     top: 0px;
   }
-}
 
-@media screen and (max-width: 480px) {
+
+
   .col-xxs-12 {
     float: none;
     width: 100%;
