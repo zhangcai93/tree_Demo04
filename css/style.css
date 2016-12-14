@@ -25,7 +25,7 @@ body.fh5co-offcanvas {
 }
 
 a {
-  color: #00ADB5;
+	color: #00070c;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
@@ -462,7 +462,7 @@ figure {
 
 #fh5co-header-section {
   background: white;
-  padding: 0;
+  padding:  1.4em 0;
   width: 100%;
   -webkit-box-shadow: 0px 5px 5px -4px rgba(0, 0, 0, 0.22);
   -moz-box-shadow: 0px 5px 5px -4px rgba(0, 0, 0, 0.22);
@@ -486,7 +486,7 @@ figure {
   font-size: 30px;
   text-transform: uppercase;
   font-weight: 600;
-  float: left;
+  float: right;
   margin-bottom: 0;
   margin-top:0.9em;
 }
@@ -504,25 +504,13 @@ figure {
 #fh5co-logo a:hover, #fh5co-logo a:focus {
   color: rgba(0, 0, 0, 0.9) !important;
 }
-#fh5co-logo span {
-  padding: 0;
-  margin: 0;
-  font-weight: 100;
-}
-@media screen and (max-width: 768px) {
+
+
   #fh5co-logo {
     width: 100%;
-    float: none;
+    float: right;
     margin-top: 0;
   }
-}
-
-#fh5co-menu-wrap {
-  position: relative;
-  z-index: 2;
-  display: block;
-  float: right;
-}
 
 #fh5co-primary-menu > li > ul li.active > a {
   color: #00ADB5 !important;
@@ -1651,18 +1639,18 @@ figure {
   transition: 0.5s;
 }
 .fh5co-offcanvas #fh5co-page {
-  -moz-transform: translateX(-240px);
-  -webkit-transform: translateX(-240px);
-  -ms-transform: translateX(-240px);
-  -o-transform: translateX(-240px);
-  transform: translateX(-240px);
+  -moz-transform: translateX(240px);
+  -webkit-transform: translateX(240px);
+  -ms-transform: translateX(240px);
+  -o-transform: translateX(240px);
+  transform: translateX(240px);
 }
 
-@media screen and (max-width: 768px) {
+
   #fh5co-menu-wrap {
     display: none;
   }
-}
+
 
 #offcanvas-menu {
   position: absolute;
@@ -1670,10 +1658,9 @@ figure {
   bottom: 0;
   z-index: 99;
   background: #222;
-  right: -240px;
+  left: -240px;
   width: 240px;
   padding: 20px;
-  overflow-y: scroll !important;
 }
 #offcanvas-menu ul {
   padding: 0;
@@ -1795,7 +1782,6 @@ figure {
 }
 
 .fh5co-nav-toggle {
-  position: absolute;
   top: 0px;
   right: 0px;
   z-index: 9999;
@@ -1804,14 +1790,14 @@ figure {
   display: none;
   cursor: pointer;
 }
-@media screen and (max-width: 768px) {
+
   .fh5co-nav-toggle {
     display: block;
     top: 0px;
   }
-}
 
-@media screen and (max-width: 480px) {
+
+
   .col-xxs-12 {
     float: none;
     width: 100%;
