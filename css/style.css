@@ -11,13 +11,14 @@
 *	Edit this section
 *
 * ======================================================= */
+
 body {
   font-family: "Open Sans", Arial, serif;
   line-height: 1.8;
   font-size: 16px;
   background: #fff;
   color: #848484;
-  font-weight: 300;
+  font-weight: 300;nav-header
   overflow-x: hidden;
 }
 body.fh5co-offcanvas {
@@ -1334,7 +1335,7 @@ figure {
 
 .about-wrap {
   border: 2px solid rgba(45, 64, 89, 0.1);
-  padding: 100px 30px 30px;
+  padding: 30px 30px;
   position: relative;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -1346,6 +1347,48 @@ figure {
     margin-bottom: 6em;
   }
 }
+
+#contact-subtile{
+  font-size: 34px;
+  color: white;
+  margin-bottom: 60px;
+}
+.about-wrap .contact-imfo,.contact-imfolast,.contact-imfobig{
+  border: 2px solid #999;
+  border-radius: 5px;
+  margin: 0; padding: 0;
+  width: 100%;
+  font-size: 26px;
+  padding-left: 5px;
+}
+.about-wrap .contact-imfo{
+  display: block;
+  height: 70px;
+  margin-bottom: 30px;
+}
+.about-wrap .contact-imfolast{
+  display: block;
+  height: 70px;
+}
+.about-wrap .contact-imfobig{  
+  height: 270px;
+  margin-bottom: -9px;
+  resize: none;
+}
+
+input:focus,textarea:focus {
+  outline:0;
+  border-color: black;
+}
+ #submit{
+  border: 2px solid #999;
+  border-radius: 5px;
+  margin-top:30px;
+  height: 80px;
+  width: 20%;
+   font-size: 26px;
+}
+
 .about-wrap .about {
   position: absolute;
   top: -70px;
@@ -1426,7 +1469,7 @@ figure {
   left: 0;
   right: 0;
   bottom: 0;
-  background: black;
+  background: #999;
   opacity: .7;
 }
 
