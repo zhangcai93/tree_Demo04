@@ -1,0 +1,157 @@
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>时光对撞机 1.0</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="时光对撞机 1.0" />
+	<meta name="keywords" content="时光对撞机 1.0" />
+
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+	<link rel="shortcut icon" href="images/home/favicon.png">
+	
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="css/icomoon.css">
+	<!-- Simple Line Icons -->
+	<link rel="stylesheet" href="css/simple-line-icons.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<!-- Superfish -->
+	<link rel="stylesheet" href="css/superfish.css">
+	<!-- Flexslider  -->
+	<link rel="stylesheet" href="css/flexslider.css">
+
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- Modernizr JS -->
+	<script src="js/modernizr-2.6.2.min.js"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+                 <style>
+        *{ margin: 0; padding:0;}
+        body{-webkit-tap-highlight-color: rgba(0,0,0,0); font-family: "微软雅黑"}
+        h1{ width: 100%; font-size: 1.5em; text-align: center; line-height: 3em; color:#47c9af; }
+        #audio{ width: 100%;}
+        #control{ width: 150px; height: 150px; line-height: 150px; text-align: center; border-radius: 200px; border:none; color:#fff; margin-top: -75px; margin-left:-75px; left:50%; top:50%; position: absolute; box-shadow: #888 0 0 8px;}
+        .color_gray{ background: #e4e4e4}
+        .hide{ display: none;}
+        .show{ display: block;}
+        .play{ background: #868282;}
+        .pause{ background:skyblue}
+        /*进度条样式*/
+        .progressBar{ width: 100%; height: 10px;margin: 30px auto 30px auto; position:absolute; left: 0; bottom: 35px;}
+        .progressBar div{ position: absolute;}
+        .progressBar .progressBac{ width: 100%; height: 10px;  left: 0; top:0; background: #e4e4e4;}
+        .progressBar .speed{width: 100%; height: 10px; left: -100%; background: #f06060; }
+        .progressBar .drag{ width: 30px; height: 30px; left: 0; top:-10px;  background: skyblue; opacity: 0.8; border-radius: 50px; box-shadow: #fff 0 0 5px;}
+        /*时间样式*/
+        #time{ width: 100%; height: 20px;position: absolute; left: 0; bottom:30px; color:#888;}
+        .tiemDetail{ position: absolute; right:10px; top:0;}
+        #songInfo{overflow: hidden; width: 200px; height:50px; line-height: 50px; text-align: center; color:#34495e;   margin-top: -25px; margin-left:-100px; left:50%; top:70%; position: absolute;}
+        .shareImg{ position: absolute; left: 100000px;}
+    </style>
+
+
+	</head>
+	<body>
+		<div id="fh5co-wrapper">
+		<div id="fh5co-page">
+		<div id="fh5co-header">
+			<header id="fh5co-header-section">
+                <div class="container">
+                    <div class="nav-header">
+                        <a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle"><i></i></a>
+                        
+                        <!-- START #fh5co-menu-wrap -->
+                        <nav id="fh5co-menu-wrap" role="navigation">
+                            <ul class="sf-menu" id="fh5co-primary-menu">
+                                <li><a href="index.html" class="fh5co-sub-ddown">Home</a>
+                                <li><a href="#" class="fh5co-sub-ddown">Exhibition</a>
+                                    <ul class="fh5co-sub-menu">
+                                        <li><a href="spliTime.html">时光对撞机 1.0</a></li>
+                                        <li><a href="gewu.html">格物·治梦</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#" class="fh5co-sub-ddown">SoundTrack</a>
+                                     <ul class="fh5co-sub-menu">
+                                        <li><a href="soundTrack.html">sonnet</a></li>
+                                    </ul>
+                                </li>
+                                
+                                <li><a class="active" href="about.html">About Us</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+            </header>
+		</div>
+        <aside id="fh5co-hero" class="js-fullheight">
+    <div>
+
+<h1>SoundTrack</h1>
+
+<!--audiostart-->
+<audio id="audio" src=""  loop="loop" autoplay="autoplay" ></audio>
+<!--audio End-->
+
+
+
+<!--播放控制按钮start-->
+<button id="control" class="">loading</button>
+<!--播放控制按钮end-->
+
+<!--时间进度条块儿start-->
+<section class="progressBar">
+    <div class="progressBac"></div>
+    <div class="speed" id="speed"></div>
+    <div class="drag" id="drag"></div>
+</section>
+<!--时间进度条块儿end-->
+
+<!--播放时间start-->
+<div id="time"><div class="tiemDetail"><span class="currentTime" id="currentTime">00:00</span>/<span class="allTime" id="allTime">00:00</span></div></div>
+<!--播放时间end-->
+<!--歌曲信息start-->
+<div id="songInfo">sonnet<div class="shareImg"></div></div>
+
+
+       </div>
+       </aside>
+			   
+
+	<!-- jQuery -->
+
+	<script src="js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="js/jquery.waypoints.min.js"></script>
+	<!-- Superfish -->
+	<script src="js/hoverIntent.js"></script>
+	<script src="js/superfish.js"></script>
+	<!-- Flexslider -->
+	<script src="js/jquery.flexslider-min.js"></script>
+	<!-- Stellar -->
+	<script src="js/jquery.stellar.min.js"></script>
+	<!-- Counters -->
+	<script src="js/jquery.countTo.js"></script>
+
+	<!-- Main JS (Do not remove) -->
+	<script src="js/main.js"></script>
+     <script type="text/javascript" src="js/sound.js"></script>
+     <script src="js/zepto.js"></script>
+
+	</body>
+</html>
+
